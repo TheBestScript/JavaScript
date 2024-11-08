@@ -1,8 +1,9 @@
 // função assíncrona para converter moeda
 async function converterMoeda(valor, moedaInicial, moedasDestino) {
-    const chaveAPI = 'e2e1bc63ab31869dd1ca85b1';
+    const chaveAPI = 'https://v6.exchangerate-api.com/v6/e2e1bc63ab31869dd1ca85b1/latest/USD';
+    //codigo da API: e2e1bc63ab31869dd1ca85b1
     
-    const url = `https://v6.exchangerate-api.com/v6/${chaveAPI}/latest/${moedaInicial}`;
+    const url = `https://exchangerate-api.org`;
     
     try {
       const resposta = await fetch(url);
